@@ -1,0 +1,79 @@
+<!-- =============================== -->
+<!-- FILE: index.html (HOME PAGE) -->
+<!-- =============================== -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Connor Rankin | Videography & VFX</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="nav">
+<div class="nav-inner">
+<div class="logo">Connor Rankin</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="videography.html">Videography</a>
+<a href="vfx.html">Visual Effects</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section class="hero">
+<h1>Connor Rankin</h1>
+<p class="subtitle">Videography & Visual Effects<br><span>Crankin Media</span></p>
+<p class="intro">
+I’m a videographer and VFX artist creating cinematic visuals, music-driven edits,
+and visual effects work. This site is a curated reference for my video and VFX projects.
+</p>
+<div class="hero-buttons">
+<a class="btn primary" href="videography.html">Videography</a>
+<a class="btn" href="vfx.html">Visual Effects</a>
+</div>
+</section>
+
+
+<section class="overview">
+<div class="card">
+<h3>Videography</h3>
+<p>
+Music videos, live performances, promotional content, and cinematic storytelling
+with an emphasis on rhythm, movement, and mood.
+</p>
+<a href="videography.html" class="text-link">View work →</a>
+</div>
+
+
+<div class="card">
+<h3>Visual Effects</h3>
+<p>
+VFX-driven shots, compositing, environment work, and experimental visuals blending
+live-action footage with digital elements.
+</p>
+<a href="vfx.html" class="text-link">View work →</a>
+</div>
+</section>
+
+
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:crankinmedia@gmail.com">crankinmedia@gmail.com</a></p>
+</section>
+</main>
+
+
+<footer class="footer">
+<p>© <span id="year"></span> Connor Rankin — Crankin Media</p>
+</footer>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
