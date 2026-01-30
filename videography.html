@@ -1,48 +1,81 @@
-<!-- ================================= -->
-<!-- FILE: videography.html (VIDEO) -->
-<!-- ================================= -->
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Videography | Connor Rankin</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Videography | Connor Rankin</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="nav">
-<div class="nav-inner">
-<div class="logo">Connor Rankin</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="videography.html">Videography</a>
-<a href="vfx.html">Visual Effects</a>
-</nav>
-</div>
-</header>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="brand-top">Connor Rankin</div>
+        <div class="brand-sub">Crankin Media</div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="videography.html">Videography</a>
+        <a href="vfx.html">VFX</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero hero-video">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner compact">
+        <h1>Videography</h1>
+        <p class="hero-sub">Selected projects and collaborations.</p>
+      </div>
+    </section>
 
-<main class="container">
-<h1 class="page-title">Videography</h1>
-<p class="page-intro">Selected videography projects and collaborations.</p>
+    <section class="container section">
+      <div class="projects">
+        <article class="project">
+          <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/c3fPpRwGX7A" allowfullscreen></iframe>
+          </div>
+          <div class="project-body">
+            <h3>Project 01</h3>
+            <p>Replace this title/description with the real project name when you want.</p>
+            <a class="btn small" href="https://www.youtube.com/watch?v=c3fPpRwGX7A" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </article>
 
+        <article class="project">
+          <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/yOf7MIGGyw4" allowfullscreen></iframe>
+          </div>
+          <div class="project-body">
+            <h3>Project 02</h3>
+            <p>Quick note about what you did: shooting, edit, color, audio, etc.</p>
+            <a class="btn small" href="https://www.youtube.com/watch?v=yOf7MIGGyw4" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </article>
 
-<section class="video-grid">
-<iframe src="https://www.youtube.com/embed/c3fPpRwGX7A" allowfullscreen></iframe>
-<iframe src="https://www.youtube.com/embed/yOf7MIGGyw4" allowfullscreen></iframe>
-<iframe src="https://www.youtube.com/embed/XrAbjYQFt8g" allowfullscreen></iframe>
-</section>
-</main>
+        <article class="project">
+          <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/XrAbjYQFt8g" allowfullscreen></iframe>
+          </div>
+          <div class="project-body">
+            <h3>Project 03</h3>
+            <p>Drop in your real description anytime — layout stays the same.</p>
+            <a class="btn small" href="https://www.youtube.com/watch?v=XrAbjYQFt8g" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Connor Rankin — Crankin Media</span>
+    </div>
+  </footer>
 
-<footer class="footer">
-<p>© <span id="year"></span> Connor Rankin — Crankin Media</p>
-</footer>
-
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
