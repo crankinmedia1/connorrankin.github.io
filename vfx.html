@@ -1,47 +1,84 @@
-<!-- =============================== -->
-<!-- FILE: vfx.html (VFX PAGE) -->
-<!-- =============================== -->
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Visual Effects | Connor Rankin</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VFX | Connor Rankin</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="nav">
-<div class="nav-inner">
-<div class="logo">Connor Rankin</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="videography.html">Videography</a>
-<a href="vfx.html">Visual Effects</a>
-</nav>
-</div>
-</header>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="brand-top">Connor Rankin</div>
+        <div class="brand-sub">Crankin Media</div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="videography.html">Videography</a>
+        <a class="active" href="vfx.html">VFX</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero hero-vfx">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner compact">
+        <h1>VFX & CGI</h1>
+        <p class="hero-sub">Breakdowns, experiments, and VFX-forward shots.</p>
+      </div>
+    </section>
 
-<main class="container">
-<h1 class="page-title">Visual Effects</h1>
-<p class="page-intro">VFX work, experiments, and visual storytelling.</p>
+    <section class="container section">
+      <div class="projects">
+        <article class="project">
+          <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/244UFguPQU0" allowfullscreen></iframe>
+          </div>
+          <div class="project-body">
+            <h3>Shot Breakdown 01</h3>
+            <p><b>Work:</b> tracking, comp, atmosphere, integration.</p>
+            <p class="muted"><b>Tools:</b> Blender, After Effects</p>
+            <a class="btn small" href="https://www.youtube.com/watch?v=244UFguPQU0" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </article>
 
+        <article class="project">
+          <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/cctlZvc3T4k" allowfullscreen></iframe>
+          </div>
+          <div class="project-body">
+            <h3>Shot Breakdown 02</h3>
+            <p><b>Work:</b> compositing, match grade, digital enhancements.</p>
+            <p class="muted"><b>Tools:</b> Blender, After Effects</p>
+            <a class="btn small" href="https://www.youtube.com/watch?v=cctlZvc3T4k" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </article>
 
-<section class="video-grid">
-<iframe src="https://www.youtube.com/embed/244UFguPQU0" allowfullscreen></iframe>
-<iframe src="https://www.youtube.com/embed/cctlZvc3T4k" allowfullscreen></iframe>
-<iframe src="https://www.youtube.com/embed/Z3-95bZS7fE" allowfullscreen></iframe>
-</section>
-</main>
+        <article class="project">
+          <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/Z3-95bZS7fE" allowfullscreen></iframe>
+          </div>
+          <div class="project-body">
+            <h3>Shot Breakdown 03</h3>
+            <p><b>Work:</b> environment work, integration, finishing.</p>
+            <p class="muted"><b>Tools:</b> Blender, After Effects</p>
+            <a class="btn small" href="https://www.youtube.com/watch?v=Z3-95bZS7fE" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Connor Rankin — Crankin Media</span>
+    </div>
+  </footer>
 
-<footer class="footer">
-<p>© <span id="year"></span> Connor Rankin — Crankin Media</p>
-</footer>
-
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
