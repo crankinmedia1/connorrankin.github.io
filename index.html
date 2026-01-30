@@ -1,81 +1,91 @@
-<!-- =============================== -->
-<!-- FILE: index.html (HOME PAGE) -->
-<!-- =============================== -->
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Connor Rankin | Videography & VFX</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connor Rankin | Videography & VFX</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="nav">
-<div class="nav-inner">
-<div class="logo">Connor Rankin</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="videography.html">Videography</a>
-<a href="vfx.html">Visual Effects</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
-</header>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="brand-top">Connor Rankin</div>
+        <div class="brand-sub">Crankin Media</div>
+      </div>
+      <nav>
+        <a class="active" href="index.html">Home</a>
+        <a href="videography.html">Videography</a>
+        <a href="vfx.html">VFX</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero hero-home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <h1>Cinematic Video &<br>VFX Production</h1>
+        <p class="hero-sub">
+          Videography + Visual Effects with a focus on mood, movement, and clean presentation.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="videography.html">View Work</a>
+          <a class="btn ghost" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+    </section>
 
-<main class="container">
-<section class="hero">
-<h1>Connor Rankin</h1>
-<p class="subtitle">Videography & Visual Effects<br><span>Crankin Media</span></p>
-<p class="intro">
-I’m a videographer and VFX artist creating cinematic visuals, custom edits,
-and visual effects work. This site is a curated reference for my video and VFX projects.
-</p>
-<div class="hero-buttons">
-<a class="btn primary" href="videography.html">Videography</a>
-<a class="btn" href="vfx.html">Visual Effects</a>
-</div>
-</section>
+    <section class="container section">
+      <div class="split-cards">
+        <article class="panel">
+          <h2>Videography</h2>
+          <p>Live performance, promos, real estate, and story-driven edits.</p>
+          <a class="text-link" href="videography.html">Explore videography →</a>
+        </article>
+        <article class="panel">
+          <h2>Visual Effects</h2>
+          <p>Compositing, environment work, and VFX-forward storytelling.</p>
+          <a class="text-link" href="vfx.html">Explore VFX →</a>
+        </article>
+      </div>
+    </section>
 
+    <section class="container section">
+      <div class="filmstrip">
+        <a class="tile" href="videography.html">
+          <img src="assets/thumb-1.jpg" alt="Live Music thumbnail">
+          <div class="tile-label">Live Music</div>
+        </a>
+        <a class="tile" href="videography.html">
+          <img src="assets/thumb-2.jpg" alt="Action / Lifestyle thumbnail">
+          <div class="tile-label">Action / Lifestyle</div>
+        </a>
+        <a class="tile" href="vfx.html">
+          <img src="assets/thumb-3.jpg" alt="VFX thumbnail">
+          <div class="tile-label">VFX & CGI</div>
+        </a>
+      </div>
+    </section>
 
-<section class="overview">
-<div class="card">
-<h3>Videography</h3>
-<p>
-Music videos, live performances, promotional content, and cinematic storytelling
-with an emphasis on rhythm, movement, and mood.
-</p>
-<a href="videography.html" class="text-link">View work →</a>
-</div>
+    <section id="contact" class="container section contact">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:crankinmedia@gmail.com">crankinmedia@gmail.com</a>
+      </p>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Connor Rankin — Crankin Media</span>
+    </div>
+  </footer>
 
-<div class="card">
-<h3>Visual Effects</h3>
-<p>
-VFX-driven shots, compositing, environment work, and experimental visuals blending
-live-action footage with digital elements.
-</p>
-<a href="vfx.html" class="text-link">View work →</a>
-</div>
-</section>
-
-
-<section id="contact" class="contact">
-<h2>Contact</h2>
-<p>Email: <a href="mailto:crankinmedia1@gmail.com">crankinmedia1@gmail.com</a></p>
-</section>
-</main>
-
-
-<footer class="footer">
-<p>© <span id="year"></span> Connor Rankin — Crankin Media</p>
-</footer>
-
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
-
