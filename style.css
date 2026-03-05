@@ -39,9 +39,36 @@ body{
   justify-content:space-between;
   gap:14px;
 }
-.brand{line-height:1.1}
-.brand-top{font-weight:800; letter-spacing:.2px}
-.brand-sub{font-size:12px; color:var(--muted)}
+/* Brand / Logo */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:var(--text);
+}
+
+.brand-logo{
+  height:42px;
+  width:auto;
+  display:block;
+}
+
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+
+.brand-top{
+  font-weight:800;
+  letter-spacing:.2px;
+}
+
+.brand-sub{
+  font-size:12px;
+  color:var(--muted);
+}
 nav a{
   color:var(--muted);
   text-decoration:none;
@@ -209,3 +236,4 @@ nav a.active{color:var(--text)}
   .project{grid-template-columns:1fr}
   nav a{margin-left:12px}
 }
+
