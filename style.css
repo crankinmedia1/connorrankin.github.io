@@ -6,9 +6,6 @@
   --muted:#b9b0a4;
   --accent:#c7923e;
   --accent2:#8f6124;
-  --cream:#eee5d8;
-  --cream2:#d9cdbb;
-  --darkText:#17130f;
 }
 
 *{box-sizing:border-box}
@@ -195,48 +192,6 @@ nav a.active{color:var(--text)}
 
 .section{ padding:46px 0; }
 
-/* Cream background for everything below the hero */
-.page-cream{
-  background:
-    linear-gradient(180deg, var(--cream) 0%, var(--cream2) 100%);
-  color:var(--darkText);
-  padding-bottom:1px;
-}
-
-.page-cream h2,
-.page-cream h3{
-  color:var(--darkText);
-}
-
-.page-cream p{
-  color:#5a5045;
-}
-
-/* Keep cards dark on cream background */
-.page-cream .panel,
-.page-cream .project,
-.page-cream .featured-slide{
-  background:rgba(28,27,24,.94);
-  color:var(--text);
-  border-color:rgba(255,255,255,.14);
-  box-shadow:0 22px 50px rgba(0,0,0,.18);
-}
-
-.page-cream .panel h2,
-.page-cream .panel h3,
-.page-cream .project h2,
-.page-cream .project h3,
-.page-cream .featured-slide h2,
-.page-cream .featured-slide h3{
-  color:var(--text);
-}
-
-.page-cream .panel p,
-.page-cream .project p,
-.page-cream .featured-slide p{
-  color:rgba(244,239,231,.86);
-}
-
 .split-cards{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -343,10 +298,6 @@ nav a.active{color:var(--text)}
 /* Full-width Featured Work Carousel */
 .featured-section{
   overflow:hidden;
-  background:transparent;
-  color:var(--darkText);
-  padding:58px 0;
-  margin:0;
 }
 
 .featured-heading{
@@ -355,12 +306,11 @@ nav a.active{color:var(--text)}
 
 .featured-heading h2{
   margin:0 0 6px;
-  color:var(--darkText);
 }
 
 .featured-heading p{
   margin:0;
-  color:#5a5045;
+  color:var(--muted);
   max-width:60ch;
 }
 
@@ -378,12 +328,12 @@ nav a.active{color:var(--text)}
 }
 
 .featured-carousel::-webkit-scrollbar-track{
-  background:rgba(0,0,0,.08);
+  background:rgba(255,255,255,.05);
   border-radius:999px;
 }
 
 .featured-carousel::-webkit-scrollbar-thumb{
-  background:rgba(0,0,0,.25);
+  background:rgba(255,255,255,.22);
   border-radius:999px;
 }
 
@@ -395,11 +345,9 @@ nav a.active{color:var(--text)}
   gap:18px;
   padding:18px;
   border-radius:22px;
-  background:rgba(28,27,24,.94);
-  border:1px solid rgba(255,255,255,.14);
-  box-shadow:0 22px 50px rgba(0,0,0,.22);
+  background:var(--panel);
+  border:1px solid var(--stroke);
   backdrop-filter:blur(8px);
-  color:var(--text);
 }
 
 .featured-media iframe{
@@ -421,7 +369,6 @@ nav a.active{color:var(--text)}
   margin:0 0 10px;
   font-size:clamp(22px, 3vw, 34px);
   line-height:1.05;
-  color:var(--text);
 }
 
 .featured-info p{
