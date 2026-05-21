@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&display=swap');
 
 :root{
   --bg:#0b0b0a;
@@ -594,14 +594,15 @@ nav a.active{color:var(--text)}
   justify-content:center;
 }
 
-/* Cursive display font for major titles only */
+/* Cormorant display font for major titles only */
 .hero h1,
 .featured-heading h2,
 .service-card h2,
 .featured-info h3,
 .about-text h2 {
-  font-family:'Pinyon Script', cursive;
-  font-weight:400;
+  font-family:'Cormorant Garamond', Georgia, serif;
+  font-style:italic;
+  font-weight:700;
   letter-spacing:.01em;
   text-shadow:0 10px 30px rgba(0,0,0,.45);
 }
@@ -611,8 +612,7 @@ nav a.active{color:var(--text)}
   max-width:1000px;
   margin:0 0 26px;
   font-size:clamp(62px, 9vw, 122px);
-  line-height:.86;
-  transform:skewX(-6deg);
+  line-height:.9;
   text-shadow:0 12px 35px rgba(0,0,0,.7);
 }
 
@@ -620,20 +620,20 @@ nav a.active{color:var(--text)}
 .featured-heading h2,
 .about-text h2 {
   font-size:clamp(48px, 6vw, 78px);
-  line-height:.9;
+  line-height:.95;
 }
 
 /* Service card titles */
 .service-card h2 {
   font-size:clamp(44px, 5vw, 72px);
-  line-height:.9;
+  line-height:.95;
   margin-bottom:14px;
 }
 
 /* Featured video titles */
 .featured-info h3 {
   font-size:clamp(40px, 4.5vw, 64px);
-  line-height:.88;
+  line-height:.95;
 }
 
 /* Keep readable text clean */
