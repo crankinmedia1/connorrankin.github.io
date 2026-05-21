@@ -195,6 +195,48 @@ nav a.active{color:var(--text)}
 
 .section{ padding:46px 0; }
 
+/* Cream background for everything below the hero */
+.page-cream{
+  background:
+    linear-gradient(180deg, var(--cream) 0%, var(--cream2) 100%);
+  color:var(--darkText);
+  padding-bottom:1px;
+}
+
+.page-cream h2,
+.page-cream h3{
+  color:var(--darkText);
+}
+
+.page-cream p{
+  color:#5a5045;
+}
+
+/* Keep cards dark on cream background */
+.page-cream .panel,
+.page-cream .project,
+.page-cream .featured-slide{
+  background:rgba(28,27,24,.94);
+  color:var(--text);
+  border-color:rgba(255,255,255,.14);
+  box-shadow:0 22px 50px rgba(0,0,0,.18);
+}
+
+.page-cream .panel h2,
+.page-cream .panel h3,
+.page-cream .project h2,
+.page-cream .project h3,
+.page-cream .featured-slide h2,
+.page-cream .featured-slide h3{
+  color:var(--text);
+}
+
+.page-cream .panel p,
+.page-cream .project p,
+.page-cream .featured-slide p{
+  color:rgba(244,239,231,.86);
+}
+
 .split-cards{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -301,13 +343,10 @@ nav a.active{color:var(--text)}
 /* Full-width Featured Work Carousel */
 .featured-section{
   overflow:hidden;
-  background:
-    linear-gradient(180deg, var(--cream) 0%, var(--cream2) 100%);
+  background:transparent;
   color:var(--darkText);
   padding:58px 0;
   margin:0;
-  border-top:1px solid rgba(255,255,255,.08);
-  border-bottom:1px solid rgba(0,0,0,.12);
 }
 
 .featured-heading{
