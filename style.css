@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
 :root{
   --bg:#0b0b0a;
   --panel:rgba(28,27,24,.78);
@@ -484,7 +486,8 @@ nav a.active{color:var(--text)}
 }
 
 .image-service-card {
-  min-height:390px;
+  min-height:720px;
+  padding:34px;
   background-size:cover;
   background-position:center;
   overflow:hidden;
@@ -509,6 +512,7 @@ nav a.active{color:var(--text)}
 .service-card-content {
   position:relative;
   z-index:2;
+  max-width:560px;
 }
 
 .image-service-card h2,
@@ -581,20 +585,87 @@ nav a.active{color:var(--text)}
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content:center;
+  justify-content:flex-end;
   text-align:center;
-  padding:110px 0;
-}
-
-.hero-inner-centered h1 {
-  max-width:900px;
-  margin:0 0 26px;
-  font-size:clamp(44px, 7vw, 82px);
-  line-height:.95;
+  padding:110px 0 105px;
 }
 
 .hero-actions-centered {
   justify-content:center;
+}
+
+/* Cursive display font for major titles only */
+.hero h1,
+.featured-heading h2,
+.service-card h2,
+.featured-info h3,
+.about-text h2 {
+  font-family:'Pinyon Script', cursive;
+  font-weight:400;
+  letter-spacing:.01em;
+  text-shadow:0 10px 30px rgba(0,0,0,.45);
+}
+
+/* Homepage hero title */
+.hero-inner-centered h1 {
+  max-width:1000px;
+  margin:0 0 26px;
+  font-size:clamp(62px, 9vw, 122px);
+  line-height:.86;
+  transform:skewX(-6deg);
+  text-shadow:0 12px 35px rgba(0,0,0,.7);
+}
+
+/* Section titles like Services / Featured Work / About */
+.featured-heading h2,
+.about-text h2 {
+  font-size:clamp(48px, 6vw, 78px);
+  line-height:.9;
+}
+
+/* Service card titles */
+.service-card h2 {
+  font-size:clamp(44px, 5vw, 72px);
+  line-height:.9;
+  margin-bottom:14px;
+}
+
+/* Featured video titles */
+.featured-info h3 {
+  font-size:clamp(40px, 4.5vw, 64px);
+  line-height:.88;
+}
+
+/* Keep readable text clean */
+p,
+.hero-sub,
+.featured-heading p,
+.service-card p,
+.featured-info p,
+.about-text p,
+.service-tags,
+.btn,
+.text-link,
+nav a {
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+.image-service-card p {
+  font-size:1.08rem;
+  line-height:1.55;
+}
+
+.service-label {
+  font-size:.86rem;
+}
+
+.service-tags {
+  margin:26px 0 24px;
+}
+
+.service-tags span {
+  padding:9px 13px;
+  font-size:.92rem;
 }
 
 /* Responsive */
@@ -671,11 +742,12 @@ nav a.active{color:var(--text)}
 
   .hero-inner-centered {
     min-height:82vh;
-    padding:84px 0;
+    justify-content:flex-end;
+    padding:84px 0 78px;
   }
 
   .hero-inner-centered h1 {
-    font-size:clamp(42px, 12vw, 64px);
+    font-size:clamp(48px, 14vw, 78px);
   }
 
   #services{
@@ -684,7 +756,12 @@ nav a.active{color:var(--text)}
   }
 
   .image-service-card{
-    min-height:360px;
+    min-height:560px;
+    padding:26px;
+  }
+
+  .image-service-card h2 {
+    font-size:clamp(32px, 9vw, 48px);
   }
 
   .featured-slide{
@@ -693,6 +770,6 @@ nav a.active{color:var(--text)}
   }
 
   .featured-info h3{
-    font-size:24px;
+    font-size:clamp(34px, 10vw, 52px);
   }
 }
