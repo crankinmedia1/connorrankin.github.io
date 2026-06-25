@@ -934,3 +934,18 @@ nav a {
     font-size:22px;
   }
 }
+/* Make sure overlays never block navigation/clicks */
+.hero-overlay,
+.service-card-overlay {
+  pointer-events:none;
+}
+
+.nav,
+.nav a,
+.service-card-content,
+.service-card-content a,
+.featured-info,
+.featured-info a {
+  position:relative;
+  z-index:5;
+}
