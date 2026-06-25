@@ -36,7 +36,7 @@
 
         <div class="hero-actions hero-actions-centered">
           <a class="btn primary" href="#services">View Services</a>
-          <a class="btn ghost" href="#featured-work">Featured Work</a>
+          <a class="btn ghost" href="#featured-work">Featured Videos</a>
         </div>
       </div>
     </section>
@@ -100,25 +100,19 @@
       </div>
     </section>
 
-    <!-- FEATURED WORK CAROUSEL -->
+    <!-- FEATURED VIDEOS -->
     <section id="featured-work" class="section featured-section">
       <div class="container">
         <div class="featured-heading">
-          <h2>Featured Work</h2>
+          <h2>Featured Videos</h2>
           <p>Selected videography, event, drone, music video, and VFX projects.</p>
         </div>
-      </div>
 
-      <div class="carousel-shell">
-        <button class="carousel-arrow carousel-arrow-left" type="button" aria-label="Previous featured work">
-          ‹
-        </button>
+        <div class="featured-video-grid">
 
-        <div class="featured-carousel" id="featuredCarousel">
-
-          <article class="featured-slide">
+          <article class="featured-video-card">
             <div class="featured-media">
-              <iframe src="https://www.youtube.com/embed/_S8b1O-HHFI" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/_S8b1O-HHFI" title="Videography Demo Reel 2026" allowfullscreen></iframe>
             </div>
             <div class="featured-info">
               <h3>Videography Demo Reel — 2026</h3>
@@ -127,9 +121,9 @@
             </div>
           </article>
 
-          <article class="featured-slide">
+          <article class="featured-video-card">
             <div class="featured-media">
-              <iframe src="https://www.youtube.com/embed/7nNt2cV63k8" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/7nNt2cV63k8" title="Event Coverage" allowfullscreen></iframe>
             </div>
             <div class="featured-info">
               <h3>Event Coverage</h3>
@@ -138,9 +132,9 @@
             </div>
           </article>
 
-          <article class="featured-slide">
+          <article class="featured-video-card">
             <div class="featured-media">
-              <iframe src="https://www.youtube.com/embed/la5Msqk2_WA" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/la5Msqk2_WA" title="VFX Demo Reel 2026" allowfullscreen></iframe>
             </div>
             <div class="featured-info">
               <h3>VFX Demo Reel — 2026</h3>
@@ -149,9 +143,9 @@
             </div>
           </article>
 
-          <article class="featured-slide">
+          <article class="featured-video-card">
             <div class="featured-media">
-              <iframe src="https://www.youtube.com/embed/_DvdgKb5VFk" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/_DvdgKb5VFk" title="Drone Highlights" allowfullscreen></iframe>
             </div>
             <div class="featured-info">
               <h3>Drone Highlights</h3>
@@ -160,9 +154,9 @@
             </div>
           </article>
 
-          <article class="featured-slide">
+          <article class="featured-video-card">
             <div class="featured-media">
-              <iframe src="https://www.youtube.com/embed/cctlZvc3T4k" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/cctlZvc3T4k" title="Cyclone — Sophia Rankin & The Sound" allowfullscreen></iframe>
             </div>
             <div class="featured-info">
               <h3>Cyclone — Sophia Rankin & The Sound</h3>
@@ -171,9 +165,9 @@
             </div>
           </article>
 
-          <article class="featured-slide">
+          <article class="featured-video-card">
             <div class="featured-media">
-              <iframe src="https://www.youtube.com/embed/6EvKyov8dgc" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/6EvKyov8dgc" title="Ray Harryhausen Collaboration" allowfullscreen></iframe>
             </div>
             <div class="featured-info">
               <h3>Ray Harryhausen Collaboration</h3>
@@ -182,9 +176,9 @@
             </div>
           </article>
 
-          <article class="featured-slide">
+          <article class="featured-video-card">
             <div class="featured-media">
-              <iframe src="https://www.youtube.com/embed/vlnpuhGIz2Y" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/vlnpuhGIz2Y" title="Million Dollar Bounty — A Western Tale" allowfullscreen></iframe>
             </div>
             <div class="featured-info">
               <h3>Million Dollar Bounty — A Western Tale</h3>
@@ -193,11 +187,29 @@
             </div>
           </article>
 
-        </div>
+          <article class="featured-video-card">
+            <div class="featured-media">
+              <iframe src="https://www.youtube.com/embed/qOxSlLhUfFc" title="Featured Video" allowfullscreen></iframe>
+            </div>
+            <div class="featured-info">
+              <h3>Featured Video</h3>
+              <p>Additional selected project showcasing video production, editing, and visual storytelling.</p>
+              <a class="btn small" href="https://youtu.be/qOxSlLhUfFc" target="_blank" rel="noopener">Watch on YouTube</a>
+            </div>
+          </article>
 
-        <button class="carousel-arrow carousel-arrow-right" type="button" aria-label="Next featured work">
-          ›
-        </button>
+          <article class="featured-video-card">
+            <div class="featured-media">
+              <iframe src="https://www.youtube.com/embed/Jj2P4cX1Xn0" title="Featured Video" allowfullscreen></iframe>
+            </div>
+            <div class="featured-info">
+              <h3>Featured Video</h3>
+              <p>Additional selected work showcasing polished editing, coverage, and cinematic pacing.</p>
+              <a class="btn small" href="https://youtu.be/Jj2P4cX1Xn0" target="_blank" rel="noopener">Watch on YouTube</a>
+            </div>
+          </article>
+
+        </div>
       </div>
     </section>
 
@@ -252,31 +264,6 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    const carousel = document.getElementById("featuredCarousel");
-    const prevButton = document.querySelector(".carousel-arrow-left");
-    const nextButton = document.querySelector(".carousel-arrow-right");
-
-    if (carousel && prevButton && nextButton) {
-      const scrollAmount = () => {
-        const slide = carousel.querySelector(".featured-slide");
-        return slide ? slide.offsetWidth + 22 : 600;
-      };
-
-      prevButton.addEventListener("click", () => {
-        carousel.scrollBy({
-          left: -scrollAmount(),
-          behavior: "smooth"
-        });
-      });
-
-      nextButton.addEventListener("click", () => {
-        carousel.scrollBy({
-          left: scrollAmount(),
-          behavior: "smooth"
-        });
-      });
-    }
   </script>
 </body>
 </html>
