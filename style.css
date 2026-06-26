@@ -983,3 +983,15 @@ nav a {
   transform: scale(1.04);
   opacity: 0.92;
 }
+
+.photo-category {
+  margin-top: 48px;
+}
+
+.small-heading {
+  margin-bottom: 20px;
+}
+
+.small-heading h2 {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
