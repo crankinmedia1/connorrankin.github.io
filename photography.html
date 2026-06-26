@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photography | Connor Rankin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="brand-top">Connor Rankin</div>
+        <div class="brand-sub">Crankin Media</div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="videography.html">Videography</a>
+        <a href="vfx.html">VFX</a>
+        <a class="active" href="photography.html">Photography</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-photo">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner compact">
+        <h1>Photography</h1>
+        <p class="hero-sub">Selected photography work across real estate, graduation portraits, band shoots, and creative promotional sessions.</p>
+      </div>
+    </section>
+
+    <!-- FEATURED PHOTOGRAPHY -->
+    <section class="container section">
+      <div class="featured-heading">
+        <h2>Photo Work</h2>
+        <p>Clean, polished photography for properties, portraits, musicians, and local creative projects.</p>
+      </div>
+
+      <div class="photo-grid">
+
+        <article class="photo-card">
+          <img src="images/real-estate-1.jpg" alt="Real estate interior photography">
+        </article>
+
+        <article class="photo-card">
+          <img src="images/real-estate-2.jpg" alt="Real estate exterior photography">
+        </article>
+
+        <article class="photo-card">
+          <img src="images/real-estate-3.jpg" alt="Real estate property photography">
+        </article>
+
+        <article class="photo-card">
+          <img src="images/grad-1.jpg" alt="Graduation portrait photography">
+        </article>
+
+        <article class="photo-card">
+          <img src="images/grad-2.jpg" alt="Graduation photo session">
+        </article>
+
+        <article class="photo-card">
+          <img src="images/grad-3.jpg" alt="Senior portrait photography">
+        </article>
+
+        <article class="photo-card">
+          <img src="images/band-1.jpg" alt="Band promotional photography">
+        </article>
+
+        <article class="photo-card">
+          <img src="images/band-2.jpg" alt="Musician photography session">
+        </article>
+
+        <article class="photo-card">
+          <img src="images/band-3.jpg" alt="Band photo shoot">
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CATEGORY CARDS -->
+    <section class="container section">
+      <div class="featured-heading">
+        <h2>Photography Services</h2>
+        <p>Photo coverage for individuals, businesses, artists, and property-focused projects.</p>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <article class="portfolio-card">
+          <div class="portfolio-card-body">
+            <span class="portfolio-tag">Real Estate</span>
+            <h3>Real Estate Photography</h3>
+            <p>Interior, exterior, and listing-focused photography designed to highlight spaces clearly and professionally.</p>
+            <p class="muted"><b>Role:</b> Photographer & Editor</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-card-body">
+            <span class="portfolio-tag">Portraits</span>
+            <h3>Grad Photos</h3>
+            <p>Graduation portraits focused on clean composition, natural posing, and polished edits for announcements and social media.</p>
+            <p class="muted"><b>Role:</b> Photographer & Editor</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-card-body">
+            <span class="portfolio-tag">Music</span>
+            <h3>Band Shoots</h3>
+            <p>Promotional and lifestyle-style band photography for artists, musicians, social media, websites, and press materials.</p>
+            <p class="muted"><b>Role:</b> Photographer & Editor</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Connor Rankin — Crankin Media</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
