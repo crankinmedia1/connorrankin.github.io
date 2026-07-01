@@ -1013,3 +1013,32 @@ nav a {
     max-width: 100%;
   }
 }
+@media (max-width: 760px) {
+  .photo-grid,
+  .photo-grid.two-column {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+
+/* Homepage Service Cards */
+
+.services-cards-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.service-card-link {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.service-card-link:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1000px) {
+  .services-cards-three {
+    grid-template-columns: 1fr;
+  }
+}
