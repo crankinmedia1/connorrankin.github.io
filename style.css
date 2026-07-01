@@ -953,15 +953,37 @@ nav a {
 /* Photography Page */
 
 .hero-photo {
-  background-image: url("images/photo-hero.jpg");
+  background-image: url("assets/photography/grad-1.jpg");
   background-size: cover;
   background-position: center;
 }
 
+.photo-category {
+  margin-top: 56px;
+  text-align: center;
+}
+
+.small-heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.small-heading h2 {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+  justify-content: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.photo-grid.two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 700px;
 }
 
 .photo-card {
@@ -984,14 +1006,10 @@ nav a {
   opacity: 0.92;
 }
 
-.photo-category {
-  margin-top: 48px;
-}
-
-.small-heading {
-  margin-bottom: 20px;
-}
-
-.small-heading h2 {
-  font-size: clamp(1.4rem, 2vw, 2rem);
+@media (max-width: 760px) {
+  .photo-grid,
+  .photo-grid.two-column {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
 }
