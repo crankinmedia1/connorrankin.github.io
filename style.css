@@ -955,7 +955,7 @@ nav a {
 .hero-photo {
   background-image: url("assets/photography/photography-hero.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 30%;
 }
 
 .photo-category {
