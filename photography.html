@@ -13,10 +13,15 @@
         <div class="brand-top">Connor Rankin</div>
         <div class="brand-sub">Crankin Media</div>
       </div>
-      <nav>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="videography.html">Videography</a>
-        <a href="photography.html">Photography</a>
+        <a class="active" href="photography.html">Photography</a>
         <a href="vfx.html">VFX</a>
       </nav>
     </div>
@@ -278,6 +283,16 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const siteNav = document.querySelector(".site-nav");
+
+    if (menuToggle && siteNav) {
+      menuToggle.addEventListener("click", () => {
+        siteNav.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", siteNav.classList.contains("open"));
+      });
+    }
   </script>
 </body>
 </html>
