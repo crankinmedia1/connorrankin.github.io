@@ -10,7 +10,7 @@
   <header class="nav nav-centered">
     <div class="nav-inner nav-inner-centered">
 
-      <nav class="nav-left">
+      <nav class="nav-left site-nav">
         <a class="active" href="./index.html">Home</a>
         <a href="./videography.html">Videography</a>
         <a href="./photography.html">Photography</a>
@@ -20,6 +20,10 @@
       <a href="./index.html" class="brand brand-centered">
         <img src="assets/cm-logo.png" alt="Crankin Media Logo" class="brand-logo brand-logo-centered">
       </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
 
     </div>
   </header>
@@ -269,6 +273,16 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const siteNav = document.querySelector(".site-nav");
+
+    if (menuToggle && siteNav) {
+      menuToggle.addEventListener("click", () => {
+        siteNav.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", siteNav.classList.contains("open"));
+      });
+    }
   </script>
 </body>
 </html>
