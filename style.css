@@ -1074,3 +1074,15 @@ nav a {
 .services-cards-three .service-tags span {
   white-space: nowrap;
 }
+/* Mobile Photography Image Fit */
+
+@media (max-width: 760px) {
+  .photo-card img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .photo-card {
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
