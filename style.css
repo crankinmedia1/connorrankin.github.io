@@ -1143,3 +1143,64 @@ nav a {
     border: 1px solid rgba(199,146,62,.48);
   }
 }
+/* SOCIAL / VERTICAL VIDEO CARDS */
+.social-video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-video-card {
+  display: block;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.social-video-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.social-video-card img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  display: block;
+}
+
+.social-video-card-body {
+  padding: 1rem;
+}
+
+.social-video-card-body h3 {
+  margin: 0.5rem 0 0.4rem;
+}
+
+.social-video-card-body p {
+  margin: 0 0 0.8rem;
+}
+
+.watch-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .social-video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .social-video-grid {
+    grid-template-columns: 1fr;
+  }
+}
