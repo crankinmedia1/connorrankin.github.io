@@ -1204,46 +1204,62 @@ nav a {
     grid-template-columns: 1fr;
   }
 }
-/* Clean top nav logo positioning */
+/* Better desktop nav layout for ultrawide screens */
 .nav {
   overflow: visible;
 }
 
 .nav-inner {
-  min-height: 92px;
+  min-height: 96px;
   height: auto;
   overflow: visible;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  position: relative;
+}
+
+/* Keep the nav links centered */
+.site-nav {
+  grid-column: 2;
+  justify-self: center;
+}
+
+/* Place the logo just to the right of the centered nav, not way off to the right */
+.brand {
+  grid-column: 3;
+  justify-self: start;
+  margin-left: 56px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-}
-
-/* Keep nav links centered */
-.site-nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* Move logo left from the far right and prevent clipping */
-.brand,
-.logo,
-.nav-logo {
-  position: absolute;
-  right: 33%;
-  top: 50%;
-  transform: translateY(-50%);
   overflow: visible;
+  padding: 10px 0;
 }
 
-/* Logo image sizing */
-.brand img,
-.logo img,
-.nav-logo img {
-  max-height: 58px;
+/* Logo image sizing and clipping fix */
+.brand img {
+  max-height: 64px;
   width: auto;
   display: block;
   object-fit: contain;
+}
+
+/* Keep mobile nav from getting weird */
+@media (max-width: 800px) {
+  .nav-inner {
+    display: flex;
+    min-height: 72px;
+  }
+
+  .brand {
+    margin-left: 0;
+    padding: 6px 0;
+  }
+
+  .brand img {
+    max-height: 48px;
+  }
 }
