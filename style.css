@@ -1204,40 +1204,46 @@ nav a {
     grid-template-columns: 1fr;
   }
 }
-/* Fix top nav logo/brand being cut off */
+/* Clean top nav logo positioning */
 .nav {
-  padding-top: 8px;
-}
-
-.nav-inner {
-  align-items: center;
-}
-
-.brand {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-/* Fix brand/logo getting clipped in top nav */
-.nav,
-.nav-inner,
-.brand {
   overflow: visible;
 }
 
 .nav-inner {
-  min-height: 72px;
+  min-height: 92px;
   height: auto;
-  align-items: center;
-}
+  overflow: visible;
 
-.brand {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 8px 0;
+  position: relative;
 }
 
-.brand-top,
-.brand-sub {
-  line-height: 1.1;
+/* Keep nav links centered */
+.site-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Move logo left from the far right and prevent clipping */
+.brand,
+.logo,
+.nav-logo {
+  position: absolute;
+  right: 33%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: visible;
+}
+
+/* Logo image sizing */
+.brand img,
+.logo img,
+.nav-logo img {
+  max-height: 58px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
