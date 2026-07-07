@@ -1204,3 +1204,16 @@ nav a {
     grid-template-columns: 1fr;
   }
 }
+/* Fix top nav logo/brand being cut off */
+.nav {
+  padding-top: 8px;
+}
+
+.nav-inner {
+  align-items: center;
+}
+
+.brand {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
