@@ -1217,3 +1217,27 @@ nav a {
   padding-top: 4px;
   padding-bottom: 4px;
 }
+/* Fix brand/logo getting clipped in top nav */
+.nav,
+.nav-inner,
+.brand {
+  overflow: visible;
+}
+
+.nav-inner {
+  min-height: 72px;
+  height: auto;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.brand-top,
+.brand-sub {
+  line-height: 1.1;
+}
